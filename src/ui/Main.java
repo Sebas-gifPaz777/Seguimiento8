@@ -16,7 +16,7 @@ public class Main {
 		boolean r=true;
 		try {
 			while(r) {
-				System.out.println("Bienvenido\n1:Digitar países\n2:Cargar países\n3:Salir");
+				System.out.println("Bienvenido\n1:Digitar países\n2:Cargar países\n3:Mostrar listas\n4:Salir");
 				String op=br.readLine();
 				
 				
@@ -24,14 +24,22 @@ public class Main {
 				
 				case 1:
 					input();
+					System.out.println();
 				break;
 				
 				case 2:
 					st.chargeFiles();
+					System.out.println();
 				break;
 				
 				case 3:
+					st.showList();
+					System.out.println();
+				break;
+				
+				case 4:
 					r=false;
+					System.out.println("El programa ha finalizado");
 				break;
 				
 				default:

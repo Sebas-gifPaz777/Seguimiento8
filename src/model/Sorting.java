@@ -44,10 +44,6 @@ public class Sorting {
 		}
 		input.close();
 		fr.close();
-		
-		firstSort();
-		secondSort();
-		thirdSort();
 	}
 	
 	public void firstSort() {
@@ -99,5 +95,11 @@ public class Sorting {
 			System.out.println(cy.get(i).toStringA());
 		}
 		cy=cyCopy;
+	}
+
+	public void showList() {
+		firstSort();
+		secondSort();
+		thirdSort();
 	}
 }
